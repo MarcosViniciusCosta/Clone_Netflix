@@ -1,0 +1,117 @@
+/*variaves */
+:root{
+    --vermelho: #E50914;
+    --preto: #141414;
+}
+
+
+/* resetar css */
+*{
+    margin: 0;
+    padding: 0;
+    /* limitar o crescimento dos elementos ao tamanho da caixa que os contorna */
+    box-sizing: border-box;
+}
+
+body{
+    background: var(--preto);
+    font-family: 'arial', Times, serif;
+    color: white;
+}
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    justify-content: space-between;
+}
+
+header .logo{
+    margin-left: 10px;
+    color: var(--vermelho);
+    font-family: "arial black", "times new roman";
+    font-size: 40px;
+}
+
+header nav a{
+    text-decoration: none;
+    color:#AAA;
+    margin-right: 10px;
+}
+
+/* seleciona um evento (no caso o hover, que é o mouse passar por cima) e modifica a cor */
+header nav a:hover{
+    color: #fff;
+}
+
+
+/* serie em destaque*/
+
+.serie_em_destaque{
+    font-size: 16px;
+    background: url("/SRC/IMG/black_mirror_capa_2.jpg"), linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%);
+    height:  400px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+   
+
+
+}
+
+.serie_em_destaque .descricao_serie_em_destaque{
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+
+.serie_em_destaque .titulo_serie_em_destaque
+{
+    margin-top:  15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.serie_em_destaque .botao
+{
+    background-color: rgba(0,0,0,50) ;
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+
+.serie_em_destaque .botao:hover
+{
+    background-color:white ;  
+    color: black;
+    
+}
+
+.botao i{
+    margin-right: 8px;
+}
+
+.container{
+    margin-left: 30px;
+}
+
+.titulo_serie_em_destaque .container{
+    width: 70%;
+}
+
+.box-series{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrousel-series
+{
+    margin-top: 5px;
+}

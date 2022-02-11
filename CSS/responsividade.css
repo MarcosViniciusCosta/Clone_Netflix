@@ -1,0 +1,27 @@
+@media screen and (max-width:700px)
+{
+
+    header .container
+    {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .serie_em_destaque .botao
+    {
+        margin-top: 5px;
+        width: 300px;
+    
+    }
+
+}
+
+@media screen and (min-width:1000px)
+{
+    .serie_em_destaque .descricao_serie_em_destaque
+    {
+        width: 50%;
+
+    }
+}
